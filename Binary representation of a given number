@@ -1,0 +1,36 @@
+void bin(unsigned n)
+{
+	unsigned i;
+	for (i = 1 << 8; i > 0; i = i / 2){
+	    printf("\n i%d n&i %d ",i,n&i);}
+		//(n & i)? printf("1"): printf("0");
+}
+
+int main(void)
+{
+	bin(7);
+	printf("\n");
+	bin(4);
+}
+
+Ex
+i256 n&i 0 
+ i128 n&i 0 
+ i64 n&i 0 
+ i32 n&i 0 
+ i16 n&i 0 
+ i8 n&i 0 
+ i4 n&i 4 
+ i2 n&i 2 
+ i1 n&i 1 
+ 
+ 
+  i256 n&i 0 
+ i128 n&i 0 
+ i64 n&i 0 
+ i32 n&i 0 
+ i16 n&i 0 
+ i8 n&i 0 
+ i4 n&i 4 
+ i2 n&i 0 
+ i1 n&i 0 
