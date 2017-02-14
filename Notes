@@ -1,0 +1,19 @@
+
+Left Shift
+
+x = x * 2^value (normal operation)
+
+x << value (bit-wise operation)
+
+x = x * 16 (which is the same as 2^4)
+
+The left shift equivalent would be x = x << 4
+Right Shift
+
+x = x / 2^value (normal arithmetic operation)
+
+x >> value (bit-wise operation)
+
+x = x / 8 (which is the same as 2^3)
+
+The right shift equivalent would be x = x >> 3
