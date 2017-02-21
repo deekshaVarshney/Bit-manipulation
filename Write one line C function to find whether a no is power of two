@@ -1,0 +1,43 @@
+#include<stdio.h>
+#define bool int
+
+/* Function to check if x is power of 2*/
+bool isPowerOfTwo (int x)
+{
+/* First x in the below expression is for the case when x is 0 */
+printf("%d\n",(x&(x-1)));
+return x && (!(x&(x-1)));
+}
+
+/*Driver program to test above function*/
+int main()
+{
+isPowerOfTwo(31)? printf("Yes\n"): printf("No\n");
+
+return 0;
+}
+
+OUTPUT
+30
+No
+!(x&(x-1))=0 (complement of a non zero value is a zero value)
+//for a number which is not a power of two 
+For example for x=3 (011) and x-1 =2(010)
+x&(x-1)=011&010=010=2
+hence it is a non zero number here 2 !(x&(x-1))=0
+
+int main()
+{
+isPowerOfTwo(32)? printf("Yes\n"): printf("No\n");
+
+return 0;
+}
+
+
+OUTPUT
+0
+Yes
+//for a number which is power of two we get zero as the result of x&(x-1)
+For example for 4 ( 100) and 16(10000), we get following after subtracting 1
+3 –> 011
+15 –> 01111
